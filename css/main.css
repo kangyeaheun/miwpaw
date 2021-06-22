@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+* { 
+    margin: 0;
+    padding:0;
+    border:0;}
+
+body{
+  margin: 0;
+  font-family: "noto", Dotum,"돋움",Verdana, serif;
+  color:#191919;  
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  background-color: #fff;
+  /* -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+  overflow-x: hidden;
+}
+
+a {color:#191919; text-decoration: none; text-align: center;}
+
+ol,ul,li{list-style: none;}
+/* 
+header, body, footer {
+    margin: 0,auto;
+    width: 100vw;
+
+} */
+
+
+/* 웹접근성을 위한 처리방식. display:none하면 태그요소를 인식하지 못하지만
+bootstrap에서 .sr-only를 사용하면 화면에서는 가려지고 태그요소는 인식 되도록 처리됨. */
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+
+
+#mainNav{
+    transition: all 1s;
+
+}
+
+.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5em;
+    height: 70px;
+}
+.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+}
+
+/* 내비에 밑줄 효과 */
+.first a{
+    position: relative;
+  }
+.first a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 0px;
+    height: 4px;
+    margin: 5px 0 0;
+    transition: all 0.5s ease-in;
+    /* transition-duration: 0.7s; */
+    opacity: 0;
+    background-color: #c57e6e;
+  }
+.first a:hover:after{
+    width: 100%;
+    opacity: 1;
+    transition: 0.7s;
+  }
+
+.navbar-header img {max-width:80px;}
+/* .starter-template {
+    text-align: center; padding-top:15vw;
+    position: relative;
+} */
+
+
+.starter-template .btn-dark {
+    border-radius: 20px;
+}
+    
+.starter-template .btn-dark:hover {
+    background-color: #f099ad; 
+    border:#f099ad 1px solid; transition:0.5s;
+}
+
+/* .container{height: 350px;} */
+
+#bg{
+    /* position: relative; */
+    background-image: url("../imgs/newBack_210426.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+}
+
+/* #bg img{
+    position: absolute;
+    bottom:0px;
+} */
+
+/* 0620: 일단 지금 레이아웃 그리드가 안 먹고 있어서 일단 주석처리를 함 */
+/* .jumbotron{
+    height: 100%;
+    width:100%;
+    text-align: center;
+}
+
+.jumbotron .cardlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.jumbotron h3 {padding-bottom:7vw;}
+.jumbotron h3 small{ 
+    color:#f26d7d;
+    font-weight: bold;
+}
+.jumbotron .card{
+    display: inline-block;
+    width: 248px;
+    height: 308px;
+    text-align: center;
+    background-color: #fff;
+    border: #f5989d 1px solid;
+    border-radius: 20px;
+    padding: 10px 15px 0;
+    word-break: keep-all;
+}
+
+.jumbotron .card .card-body {
+    position: relative;
+}
+.jumbotron .card img {
+    position: absolute;
+    top:-30px;
+    right:35%;
+}
+.jumbotron .card .card-title {
+    padding-top:40px;
+    line-height:0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.jumbotron .card .card-subtitle {
+    padding-bottom:40px;
+    font-size: 20px;
+    font-weight: 800;
+    color:#191919;
+} */
+
+/* 이거 질문 하기 !!!! */
+/* 0620: 이거 곤란.. 반응형이 안 먹음 */
+/* .row{flex-wrap: nowrap !important;} */
+
+
+/* 0620: 이거도 곤란.. 부트스트랩을 재정의 하고 있음 */
+/* .container .row {
+    width:100vw;
+    
+}
+.container .row .col-md-4{
+    width:350px;
+    height: 500px;
+}
+
+.container .row .col-4{
+    width:250px;
+    height: 500px;
+    border-radius: 20px;
+    
+    margin: 0 10px;
+}
+.container .row .col-3.miwbox {
+    width:350px;
+    height: 500px;
+    background-image: url('../imgs/ser01.png');
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+}
+.container .row .col-3.pawbox {
+    width:350px;
+    height: 500px;
+    background-image: url('../imgs/ser02.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+} */
+
+
+.ourService,
+.otherService
+{  
+    height: 500px;
+    width: 100%;
+    margin: 0;
+
+}
+
+ 
+/* #morea {
+    transform: rotate(270deg) 
+    max-height: 400px ;
+}  */
+
+
+/* more btn */
+.go_btn:hover{ background-color: #f26d7d;}
+.go_pink{transform: translateX(20px); transition: .4s;}
+.go_btn:hover .go_pink{
+    transform: translateX(30px); 
+}
+
+/* .go_pink2{transform: translateX(5px) translateY(290px); transition: .4s;}
+.go_btn:hover .go_pink2{
+    transform: translateX(20px) translateY(290px);
+}
+
+.go_btn3:hover .go_pink{
+    transform: translateX(30px); 
+} */
+
+/* 
+.ourService2 {
+   width: 100vw !important;
+   display: block !important;
+ 
+} */
+.miwstore{
+    background-image: url("../imgs/storeBg.jpeg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    padding: 59px 0 0 58px;
+    box-sizing:border-box;
+    z-index: 1;
+    box-sizing:border-box;}
+
+
+
+
+
+.card .dic{
+    height:60px;
+}
+
+#otherService2{
+   padding-top:100px !important;
+}
+
+
+
+
+/* swiper slide */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    overflow: hidden;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover !important;
+    transition: all 0.4s
+  }
+  
+.swiper-slide > span {
+    display: none;
+    transform: translate(-30px);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.swiper-slide img:hover + span  {
+    display: block;
+    transform: translateY(0px);
+}
+.news .row img{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+.news .row {height: 200px;}
+
+#talkchat-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    z-index: 99;
+}
+
+
+
+
