@@ -36,16 +36,16 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
                         <a class="nav-link" href="#">정기구독이란?</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
                         <a class="nav-link" href="#">미유상점</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
                         <a class="nav-link" href="#">다이어리</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
                         <a class="nav-link" href="#">커뮤니티</a>
                     </li>
                     <li class="nav-item text-center text-dark d-flex justify-content-around fs-5 fw-bold">
@@ -75,8 +75,8 @@
         </div>
         <div class="row starter-template">
             <div class="col text-center">
-                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1" type="button">체험하기</button>
-                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1" type="button">정기구독 혜택보기</button>
+                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1 rounded-pill type=" button">체험하기</button>
+                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1 rounded-pill type=" button">정기구독 혜택보기</button>
             </div>
         </div>
         <div>
@@ -144,8 +144,7 @@
     <!-- 4) 우리 서비스 자랑 영역 -->
     <div id="forth" class="container-fluid section-services pb-5 mb-5">
         <div class="row ourService my-5 py-5">
-            <div class="col-xl-1"></div>
-            <div class="col-4 col-xl-3 h-400">
+            <div class="col-3 col-xl-3 h-400">
                 <div class="col m-3 h-100 d-flex flex-column justify-content-center">
                     <div>
                         <img src="./imgs/boxing.png" alt="">
@@ -154,13 +153,13 @@
                     <h4 class="fw-bold">MIWPAW BOX</h4>
                 </div>
             </div>
-            <div class="col-8 col-b h-400">
+            <div class="col-9 col-b h-400">
                 <div class="container-fluid h-100">
                     <div class="row h-100">
                         <div class="col-md m-3 bg-a br-20">
-                            <h4 class="p-4 pb-2 fs-5 fw-bold">MIW BOX</h4>
-                            <p class="px-4 my-0 fw-bold">가격대만 선택하세요.</p>
-                            <p class="px-4 my-0 fw-bold">등록된 고양이 정보를 토대로 맞춤 사료를 선별하여 자동으로 구성됩니다.</p>
+                            <h4 class="p-2 pt-3 fs-5 fw-bold">MIW BOX</h4>
+                            <p class="px-2 my-0">가격대만 선택하세요.</p>
+                            <p class="px-2 my-0">등록된 고양이 정보를 토대로 맞춤 사료를 선별하여 자동으로 구성됩니다.</p>
                             <button class="btn btn-outline-pink btn-sm m-4 mt-4 fs-6 rounded-pill go_btn text-dark"
                                 type="button"><span>more</span>
                                 <img src="./imgs/go_pink.png" class="go_pink" alt="">
@@ -168,8 +167,8 @@
                         </div>
                         <div class="col-md m-3 bg-b br-20">
                             <h4 class="p-4 pb-2 fs-5 fw-bold">PAW BOX</h4>
-                            <p class="px-4 my-0 fw-bold">추천사료를 제안받아보세요.</p>
-                            <p class="px-4 my-0 fw-bold">추천받은 사료 리스트에서 직접 선택해 구성할 수 있어요.</p>
+                            <p class="px-4 my-0">추천사료를 제안받아보세요.</p>
+                            <p class="px-4 my-0">추천받은 사료 리스트에서 직접 선택해 구성할 수 있어요.</p>
                             <button class="btn btn-outline-pink btn-sm m-4 mt-4 fs-6 rounded-pill go_btn text-dark"
                                 type="button"><span>more</span>
                                 <img src="./imgs/go_pink.png" class="go_pink" alt="">
@@ -445,34 +444,55 @@
     </div>
 
     <!-- footer -->
+
     <div class="container-fluid">
-        <div class="row bg-light text-secondary">
-            <div class="col-7 d-flex flex-row">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item col-2">
-                        <a href="" class="nav-link">
+        <div class="row bg-light text-white bg-light text-secondary pt-5">
+            <div class="col-9 footer-inner">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
                             <span class="text-decoration-none text-white fw-bold">회사소개</span>
                         </a>
                     </li>
-                    <li class="nav-item col-2">
-                        <a href="" class="nav-link">
+                    <span class="pt-2">&#x007C;</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <span class="text-decoration-none text-white fw-bold">이용약관</span>
                         </a>
                     </li>
-                    <li class="nav-item col-3">
-                        <a href="" class="nav-link">
+                    <span class="pt-2">&#x007C;</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <span class="text-decoration-none text-white fw-bold">개인정보처리방침</span>
                         </a>
                     </li>
-                    <li class="nav-item col-2">
-                        <a href="" class="nav-link"><span
-                                class="text-decoration-none text-white fw-bold">이용안내</span></a></li>
-                    <li class="nav-item col-2">
-                        <a href="" class="nav-link"><span
-                                class="text-decoration-none text-white fw-bold">광고제휴문의</span></a></li>
+                    <span class="pt-2">&#x007C;</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="text-decoration-none text-white fw-bold">이용안내</span>
+                        </a>
+                    </li>
+                    <span class="pt-2">&#x007C;</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="text-decoration-none text-white fw-bold">광고제휴문의</span>
+                        </a>
+                    </li>
                 </ul>
+
+                <p class="lh-1">상호:(주)태원 INT 주소:경기도 고양시 일산동구 무궁화로 /물류:경기도 고양시 </p>
+                <p class="lh-1">대표:한창근 사업자등록번호: 3000-00-000 사업자정보확인> 통신판매업신고번호:제2021-고양일산동-0981 개인정보관리자:000
+                <p class="lh-1">대표번호:000-0000 팩스번호:00000-000-0000 메일: miwpaw@miwpaw.com</p>
+                <p class="fw-bold">이 사이트는 포트폴리오용으로 제작된 사이트로 모든 저작권은 (주)태원 INT에 있습니다. </p>
+                <p class="lh-2">Copyrightⓒ(주)태원 INT All right reserved.</p>
+
+                </p>
             </div>
-            <div class="col-4 sns">
+
+
+
+
+            <div class="col-3 d-flex justify-content-evenly">
                 <a href=""><img src="./imgs/youtubeIcon.png" alt="유튜브"></a>
                 <a href=""><img src="./imgs/f_sns2.png" alt="인스타그램"></a>
                 <a href=""><img src="./imgs/f_sns3.png" alt="페이스북"></a>
