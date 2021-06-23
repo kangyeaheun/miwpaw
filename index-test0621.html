@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MIWPAW - Portfolio용 사이트 </title>
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
     <!-- Bootstrap  낮은 버전 cdn이었다. 이런 -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
@@ -36,16 +36,16 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
                         <a class="nav-link" href="#">정기구독이란?</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
                         <a class="nav-link" href="#">미유상점</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
                         <a class="nav-link" href="#">다이어리</a>
                     </li>
-                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2 first">
+                    <li class="nav-item text-center text-dark fs-5 fw-bold px-2">
                         <a class="nav-link" href="#">커뮤니티</a>
                     </li>
                     <li class="nav-item text-center text-dark d-flex justify-content-around fs-5 fw-bold">
@@ -75,8 +75,8 @@
         </div>
         <div class="row starter-template">
             <div class="col text-center">
-                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1 rounded-pill type=" button">체험하기</button>
-                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1 rounded-pill type=" button">정기구독 혜택보기</button>
+                <button class="btn btn-dark btn-lg fs-3 fw-bold m-1" type="button">체험하기</a>
+                    <button class="btn btn-dark btn-lg fs-3 fw-bold m-1" type="button">정기구독 혜택보기</a>
             </div>
         </div>
         <div>
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <div id="third" class="container-fluid bg-secondary">
+    <div id="third" class="container-fluid bg-secondary p-0">
         <div class="row p-5 ">
             <div class="col-md-4 p-3 d-flex flex-column">
                 <div class="d-flex justify-content-center">
@@ -98,11 +98,9 @@
                     <div class="my-card mw-400 p-3 pt-4 text-center">
                         <h3 class="text-success fs-6 fw-bold mb-0">CAT INFORMATION</h3>
                         <h4 class="fs-5 fw-bold">고양이 정보 등록</h4>
-                        <p class="mh-20">
-                            가벼운 마음으로 시작하세요!
+                        <p class="mh-20">가벼운 마음으로 시작하세요!
                             우선 간단하게 나의 고양이 정보를 입력하세요.
-                            나이, 성별, 품종, 체형과 기호성 등 집사라면 쉽게 알 수 있는 간단한 질문으로 구성되어 있습니다.
-                        </p>
+                            나이, 성별, 품종, 체형과 기호성 등 집사라면 쉽게 알 수 있는 간단한 질문으로 구성되어 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -140,11 +138,13 @@
         </div>
     </div>
 
+
     <!-- our service -->
     <!-- 4) 우리 서비스 자랑 영역 -->
-    <div id="forth" class="container-fluid section-services pb-5 mb-5">
+    <div id="forth" class="container-fluid section-services">
         <div class="row ourService my-5 py-5">
-            <div class="col-3 col-xl-3 h-400">
+            <div class="col-xl-1"></div>
+            <div class="col-4 col-xl-3 col-a h-400">
                 <div class="col m-3 h-100 d-flex flex-column justify-content-center">
                     <div>
                         <img src="./imgs/boxing.png" alt="">
@@ -153,22 +153,23 @@
                     <h4 class="fw-bold">MIWPAW BOX</h4>
                 </div>
             </div>
-            <div class="col-9 col-b h-400">
+            <div class="col-8 col-b h-400">
                 <div class="container-fluid h-100">
                     <div class="row h-100">
-                        <div class="col-md m-3 bg-a br-20">
-                            <h4 class="p-2 pt-3 fs-5 fw-bold">MIW BOX</h4>
-                            <p class="px-2 my-0">가격대만 선택하세요.</p>
-                            <p class="px-2 my-0">등록된 고양이 정보를 토대로 맞춤 사료를 선별하여 자동으로 구성됩니다.</p>
+                        <div class="col-md m-3 bg-a br-10">
+                            <h4 class="p-4 pb-2 fs-5 fw-bold">MIW BOX</h4>
+                            <p class="px-4 my-0 fw-bold">가격대만 선택하세요.</p>
+                            <p class="px-4 my-0 fw-bold">등록된 고양이 정보를 토대로 맞춤 사료를 선별하여 자동으로 구성됩니다.</p>
                             <button class="btn btn-outline-pink btn-sm m-4 mt-4 fs-6 rounded-pill go_btn text-dark"
-                                type="button"><span>more</span>
+                                type="button">
+                                <span>more</span>
                                 <img src="./imgs/go_pink.png" class="go_pink" alt="">
                             </button>
                         </div>
-                        <div class="col-md m-3 bg-b br-20">
+                        <div class="col-md m-3 bg-b br-10">
                             <h4 class="p-4 pb-2 fs-5 fw-bold">PAW BOX</h4>
-                            <p class="px-4 my-0">추천사료를 제안받아보세요.</p>
-                            <p class="px-4 my-0">추천받은 사료 리스트에서 직접 선택해 구성할 수 있어요.</p>
+                            <p class="px-4 my-0 fw-bold">추천사료를 제안받아보세요.</p>
+                            <p class="px-4 my-0 fw-bold">추천받은 사료 리스트에서 직접 선택해 구성할 수 있어요.</p>
                             <button class="btn btn-outline-pink btn-sm m-4 mt-4 fs-6 rounded-pill go_btn text-dark"
                                 type="button"><span>more</span>
                                 <img src="./imgs/go_pink.png" class="go_pink" alt="">
@@ -180,33 +181,30 @@
         </div>
     </div>
 
-    <div id="fifth" class="container-fluid">
-        <div class="row otherService">
-            <div class="col-xl-2 col-1"></div>
-            <div class="col-5 col-md-6 h-400">
-                <img src="./imgs/ser03.png" class="img-fluid d-block d-md-none" id="morea" alt="모래이미지">
-                <img src="./imgs/ser03-2.png" class="img-fluid d-none d-md-inline-block" id="morea2" alt="모래이미지"></div>
-            <div class="col m-3 h-100 d-flex flex-column justify-content-center">
-                <div class="mt-5">
-                    <img src="./imgs/morae.png" class="img" alt="">
-                    <h3 class="fw-bold"><span class="text-success fs-6">OTHER SERVICE</span><br>
-                        <h4 class="fs-5 p-0 m-0">모래 정기배송</h4>
-                        <p class="p-0 m-0">모래 배송간격과 수량을</p>
-                        <p class="p-0 m-0">집사님 입맛대로 선택하세요!</p>
-                        <p class="p-0 m-0">미유파우가 정기배송해드립니다.</p>
-                        <button class="btn btn-outline-pink btn-sm mt-4 fs-6 rounded-pill go_btn text-dark"
-                            type="button"><span>more</span>
-                            <img src="./imgs/go_pink.png" class="go_pink" alt=""></button>
-                </div>
+    <div id="fifth" class="row otherService my-5 py-5">
+        <div class="col-xl-2 col-md-1"></div>
+        <div class="col-5 col-md-6 col-a h-400">
+            <img src="./imgs/ser03.png" class="img-fluid soil" alt="모래이미지"></div>
+        <div class="col m-3 h-100 d-flex flex-column justify-content-center">
+            <div>
+                <img src="./imgs/morae.png" class="img-fluid" alt="">
+                <h3 class="fw-bold"><span class="text-success fs-6">OTHER SERVICE</span><br>
+                    <h4 class="p-0 m-0">모래 정기배송</h4>
+                    <p class="p-0 m-0">모래 배송간격과 수량을</p>
+                    <p class="p-0 m-0">집사님 입맛대로 선택하세요!</p>
+                    <p class="p-0 m-0">미유파우가 정기배송해드립니다.</p>
+                    <button class="btn btn-outline-pink btn-sm mt-4 fs-6 rounded-pill go_btn text-dark"
+                        type="button"><span>more</span>
+                        <img src="./imgs/go_pink.png" class="go_pink" alt=""></button>
             </div>
-            <div class="col-md-8"></div>
         </div>
+        <div class="col-md-8"></div>
     </div>
 
-    <div id="sixth" class="container-fluid bg-info">
+    <div id="sixth" class="bg-info">
         <div class="row ourService my-5 py-5 miwstore">
             <div class="col-xl-1"></div>
-            <div class="col-md-4 col-10 h-400">
+            <div class="col-4 col-a h-400">
                 <div class="col m-3 h-100 d-flex flex-column justify-content-center">
                     <div>
                         <img src="./imgs/storeBag.png" alt="">
@@ -214,9 +212,9 @@
                     <h3 class="fw-bold">미유상점</h3>
                     <p class="mt-2 m-0 fs-6 fw-bold">
                         없는 것 빼고 다 있는</p>
-                    <p class="m-0 fs-6 fw-bold">
+                    <p class="fs-6 m-0 fw-bold">
                         미유상점으로 놀러오세요-</p>
-                    <p class="m-0 fs-6 fw-bold">
+                    <p class="fs-6 fw-bold">
                         정기구독과 합배송 하면 배송비 무료!
                     </p>
                     <div>
@@ -231,7 +229,7 @@
         </div>
     </div>
 
-    <div id="seventh" class="container-fluid">
+    <div id="seventh" class="container-fluid p-0">
         <div class="row p-5 ">
             <div class="col-md-4 p-3 d-flex flex-column">
                 <div class="d-flex justify-content-center">
@@ -356,76 +354,61 @@
                     </div>
                     <div class="container-fluid news">
                         <div class="row mb-5">
-                            <!-- <div class="col-1"></div> -->
                             <div class="col-4"><img src="./imgs/2009146244_2ce378893fc.jpeg" alt=""
                                     class="img float-end"></div>
-                            <div class="col-8 p-4 border border-brown bg-white h-100 text-start">
+                            <div class="col-7 p-5 border border-brown bg-white h-100 text-start">
                                 <h5 class="fs-6 text-muted lh-2">2021년 4월 19일 부터 2021년 4월 30일까지<h5>
                                         <p class="fs-5 fw-bold lh-2">미유파우의 손편지 이벤트 안내</p>
                                         <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
                             </div>
-                            <!-- <div class="offset-1"></div> -->
+                            <div class="offset-1"></div>
                         </div>
 
                         <div class="row my-5">
-                            <!-- <div class="col-1"></div> -->
                             <div class="col-4"><img src="./imgs/2009146244_c1709be1d23.jpeg" alt=""
                                     class="img float-end"></div>
-                            <div class="col-8 p-4 border border-brown bg-white h-100 text-start">
-                                <h5 class="fs-6 text-muted">2021년 4월 1일 부터<h5>
+                            <div class="col-7 p-5 border border-brown bg-white h-100 text-start">
+                                <h5 class="fs-6 text-muted lh-2">2021년 4월 1일 부터<h5>
                                         <p class="fs-5 fw-bold p-0 m-0">회원등급안내</p>
-                                        <p class="text-muted fs-6 h-50">미유파우의 새로운 등급제도 '솜방망이'를 소개합니다.</span>
+                                        <p class="text-muted fs-6">미유파우의 새로운 등급제도 '솜방망이'를 소개합니다.</span>
                                         </p>
                                         <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
                             </div>
-                            <!-- <div class="offset-1"></div> -->
+                            <div class="offset-1"></div>
                         </div>
 
                         <div class="row my-5">
-                            <!-- <div class="col-1"></div> -->
-                            <div class="col-4"><img src="./imgs/2009146244_3fc0546ac08.jpeg" alt=""
-                                    class="img float-end"></div>
-                            <div class="col-8 p-4 border border-brown bg-white h-100 text-start">
-                                <h5 class="fs-6 text-muted">2021년 3월 25일부터<h5>
-                                        <p class="fs-5 fw-bold">정기구독회원특전소개</p>
-                                        <p class="fs-6 text-muted h-50">정기구독회원님들께만 드리는 특급혜택을 꼼꼼하게 짚어드릴게요. 미유파우에서 드리는 혜택
-                                            꼭 다 받아가셔야해요☆
-                                        </p>
-
-                                        <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
-                            </div>
-                            <!-- <div class="offset-1"></div> -->
-                        </div>
-
-                        <div class="row my-5">
-                            <!-- <div class="col-1"></div> -->
                             <div class="col-4"><img src="./imgs/2009146244_bd732759cc6.jpeg" alt=""
                                     class="img float-end"></div>
-                            <div class="col-8 p-4 border border-brown bg-white h-100 text-start">
-                                <h5 class="fs-6 text-muted lh-2">2021년 03월01일 부터<h5>
-                                        <p class="fs-5 fw-bold">모래구독은 무엇인가요?</p>
-                                        <p class="text-muted fs-6 h-50">모래만 고르시면 배송간격 및 수량 모두 집사님 선택대로 정기배송 해드립니다!미유파우의
-                                            모래구독 어떻게 하는지 알려드려요!</p>
+                            <div class="col-7 p-5 border border-brown bg-white h-100 text-start">
+                                <h5 class="fs-6 text-muted lh-2">2021년 3월 25일부터<h5>
+                                        <p class="fs-5 fw-bold lh-2">정기구독회원특전소개</p>
+
                                         <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
                             </div>
-                            <!-- <div class="offset-1"></div> -->
+                            <div class="offset-1"></div>
                         </div>
 
                         <div class="row my-5">
-                            <!-- <div class="col-1"></div> -->
-                            <div class="col-4"><img src="./imgs/2009146244_e90cc783411.jpeg" alt=""
+                            <div class="col-4"><img src="./imgs/2009146244_3fc0546ac08.jpeg" alt=""
                                     class="img float-end"></div>
-                            <div class="col-8 p-4 border border-brown bg-white h-100 text-start">
-                                <h5 class="fs-6 text-muted">2021년 01월 08일 ~ 2021년 02월 05일<h5>
-                                        <p class="fs-5 fw-bold">멋찐고양이 콘테스트</p>
-                                        <p class="fs-6 text-muted h-50">미유파우의 집사놀이터에서 멋찐 고양이가 되어보세요!집사놀이터에서 야옹님 자랑하고 상품
-                                            받아가세요!이벤트에 참여해주셔서 감사합니다. 당첨자
-                                            발표입니다!1등sjm8***@naver.com2등ely***@naver.com3등abisinia***@naver.comtpwld5***@naver.com
-                                            내 고양이 귀여운거 나만 보기 아깝다는 집사님들은 주목-
-                                        </p>
+                            <div class="col-7 p-5 border border-brown bg-white h-100 text-start">
+                                <h5 class="fs-6 text-muted lh-2">2021년 4월 19일 부터 2021년 4월 30일까지<h5>
+                                        <p class="fs-5 fw-bold lh-2">미유파우의 손편지 이벤트 안내</p>
                                         <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
                             </div>
-                            <!-- <div class="offset-1"></div> -->
+                            <div class="offset-1"></div>
+                        </div>
+
+                        <div class="row my-5">
+                            <div class="col-4"><img src="./imgs/2009146244_e90cc783411.jpeg" alt=""
+                                    class="img float-end"></div>
+                            <div class="col-7 p-5 border border-brown bg-white h-100 text-start">
+                                <h5 class="fs-6 text-muted lh-2">2021년 4월 19일 부터 2021년 4월 30일까지<h5>
+                                        <p class="fs-5 fw-bold lh-2">미유파우의 손편지 이벤트 안내</p>
+                                        <button class="btn btn-success btn-sm text-white float-end">자세히보기</button>
+                            </div>
+                            <div class="offset-1"></div>
                         </div>
 
                     </div>
@@ -434,71 +417,57 @@
             </div>
 
         </div>
-    </div>
-
-    <!-- talk -->
-    <div id="talkchat-btn">
-        <a href="">
-            <img src="./imgs/consult_small_yellow_pc.png" class="img" alt="카카오톡채널 1:1채팅 버튼">
-        </a>
-    </div>
-
-    <!-- footer -->
-
-    <div class="container-fluid">
-        <div class="row bg-light text-white bg-light text-secondary pt-5">
-            <div class="col-9 footer-inner">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span class="text-decoration-none text-white fw-bold">회사소개</span>
-                        </a>
-                    </li>
-                    <span class="pt-2">&#x007C;</span>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="text-decoration-none text-white fw-bold">이용약관</span>
-                        </a>
-                    </li>
-                    <span class="pt-2">&#x007C;</span>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="text-decoration-none text-white fw-bold">개인정보처리방침</span>
-                        </a>
-                    </li>
-                    <span class="pt-2">&#x007C;</span>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="text-decoration-none text-white fw-bold">이용안내</span>
-                        </a>
-                    </li>
-                    <span class="pt-2">&#x007C;</span>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="text-decoration-none text-white fw-bold">광고제휴문의</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <p class="lh-1">상호:(주)태원 INT 주소:경기도 고양시 일산동구 무궁화로 /물류:경기도 고양시 </p>
-                <p class="lh-1">대표:한창근 사업자등록번호: 3000-00-000 사업자정보확인> 통신판매업신고번호:제2021-고양일산동-0981 개인정보관리자:000
-                <p class="lh-1">대표번호:000-0000 팩스번호:00000-000-0000 메일: miwpaw@miwpaw.com</p>
-                <p class="fw-bold">이 사이트는 포트폴리오용으로 제작된 사이트로 모든 저작권은 (주)태원 INT에 있습니다. </p>
-                <p class="lh-2">Copyrightⓒ(주)태원 INT All right reserved.</p>
-
-                </p>
-            </div>
 
 
 
 
-            <div class="col-3 d-flex justify-content-evenly">
-                <a href=""><img src="./imgs/youtubeIcon.png" alt="유튜브"></a>
-                <a href=""><img src="./imgs/f_sns2.png" alt="인스타그램"></a>
-                <a href=""><img src="./imgs/f_sns3.png" alt="페이스북"></a>
+
+
+
+        <!-- talk -->
+        <div id="talkchat-btn">
+            <a href="">
+                <img src="./imgs/consult_small_yellow_pc.png" class="img" alt="카카오톡채널 1:1채팅 버튼">
+            </a>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="container-fluid">
+            <div class="row bg-light text-secondary">
+                <div class="col-7">
+                    <ul class="navbar-nav">
+                        <li class="nav-item col-2">
+                            <a href="" class="nav-link">
+                                <span class="text-decoration-none text-white fw-bold">회사소개</span>
+                            </a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a href="" class="nav-link">
+                                <span class="text-decoration-none text-white fw-bold">이용약관</span>
+                            </a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a href="" class="nav-link">
+                                <span class="text-decoration-none text-white fw-bold">개인정보처리방침</span>
+                            </a>
+                        </li>
+                        <li class="nav-item col-2">
+                            <a href="" class="nav-link"><span
+                                    class="text-decoration-none text-white fw-bold">이용안내</span></a></li>
+                        <li class="nav-item col-2">
+                            <a href="" class="nav-link"><span
+                                    class="text-decoration-none text-white fw-bold">광고제휴문의</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 sns">
+                    <a href=""><img src="./imgs/youtubeIcon.png" alt="유튜브"></a>
+                    <a href=""><img src="./imgs/f_sns2.png" alt="인스타그램"></a>
+                    <a href=""><img src="./imgs/f_sns3.png" alt="페이스북"></a>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
