@@ -200,6 +200,17 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 }
 
 
+//ninth: 뉴스 섹션
+#ninth button.d-sm-none {
+ right: 20px;
+  bottom: 50px;
+}
+
+#ninth button.d-none {
+  right: 20px;
+  bottom: 20px;
+}
+
 
 /* swiper slide */
 
@@ -271,12 +282,12 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 // overflow:hidden;
 // }
 
-.news .row img{
-  // height: 200px;
-  overflow: hidden;
-  object-fit: contain;
+// .news .row img{
+//   // height: 200px;
+//   overflow: hidden;
+//   object-fit: contain;
   
-}
+// }
 // .news .row {height: 200px;}
 
 /* more btn */
@@ -294,9 +305,7 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
   z-index: 99;
 }
 
-.footer-inner p {
-  text-indent: 15px;
-}
+
 
 $grid-breakpoints: (
   xs: 0,

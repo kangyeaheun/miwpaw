@@ -163,6 +163,16 @@ a {
   height: 60px;
 }
 
+#ninth button.d-sm-none {
+  right: 20px;
+  bottom: 50px;
+}
+
+#ninth button.d-none {
+  right: 20px;
+  bottom: 20px;
+}
+
 /* swiper slide */
 .swiper-container {
   width: 100%;
@@ -208,12 +218,6 @@ a {
           transform: translateY(0px);
 }
 
-.news .row img {
-  overflow: hidden;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 /* more btn */
 .go_btn:hover {
   background-color: #f26d7d;
@@ -236,10 +240,6 @@ a {
   bottom: 20vw;
   right: 5vw;
   z-index: 99;
-}
-
-.footer-inner p {
-  text-indent: 15px;
 }
 
 /*!
