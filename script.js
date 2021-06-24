@@ -2,21 +2,21 @@
 import * as bootstrap from 'bootstrap';
 
 // import Swiper JS
-import Swiper from 'swiper';
+// import Swiper from 'swiper';
 // // import Swiper styles
 // import 'swiper/swiper-bundle.css';
 
 const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 0,
-    slidesPerGroup:4,
-    loop: true,
-  
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  slidesPerView: 4,
+  spaceBetween: 0,
+  slidesPerGroup: 4,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // window.addEventListener('DOMContentLoaded',function(event) {
 
 //     // Navbar shrink function
