@@ -47,23 +47,27 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 
 
 // 2) 정기구독 섹션
-
 #bg {
-  /* position: relative; */
-  background-image: url("../imgs/newBack_210426.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: {
+    image: url("../imgs/newBack_210426.jpg");
+    repeat: no-repeat;
+    position: center center;
+    size: cover;
+  };
 }
 
 .navbar-shrink {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: {
+      top: 0.5rem;
+      bottom: 0.5rem;};
+      
   font-size: 1.5em;
   height: 70px;
-}
-.navbar-shrink .navbar-brand {
+
+ &.navbar-brand {
   font-size: 1.5em;
+};
+    
 }
 
 /* 내비에 밑줄 효과 */
@@ -100,70 +104,80 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 }
 
 // 3) 알고리즘 오더 영역
-#third .mw-400 {
-  max-width: 400px;
-  min-height: 200px;
-  max-height: 70vh;
-}
 
-#third .mh-20 {
-  max-height: 20vh;
-}
-
-#third .my-icon {
-  position: relative;
-  top: 20px;
-}
-
-#third .my-card {
-  border-radius: 20px;
-  background-color: white;
-  border: 1px #f5989d solid;
-}
+#third {
+  & .mw-400 {
+   max-width: 400px;
+   min-height: 200px;
+   max-height: 70vh;
+ }
+ 
+  & .mh-20 {
+   max-height: 20vh;
+ }
+ 
+  & .my-icon {
+   position: relative;
+   top: 20px;
+ }
+ 
+  & .my-card {
+   border-radius: 20px;
+   background-color: white;
+   border: 1px #f5989d solid;
+  }
+ }
 
 // 4) 우리 서비스 자랑 영역
-#forth .h-400 {
-  height: 400px;
-}
-
-#forth .bg-a {
-  background-image: url('../imgs/ser01.png');
-  background-repeat: no-repeat;
-  background-position:right bottom;
-  background-size: cover;
-  max-height:300px;
-  
-}
-
-#forth .bg-b {
-  background-image: url('../imgs/ser02.png');
-  background-repeat: no-repeat;
-  background-position:right bottom;
-  background-size: cover;
-  max-height:300px;
-
-}
-
-#forth .br-20 {
-  border-radius: 20px;
-}
-
-
+#forth {
+  & .h-400 {
+   height: 400px;
+ }
+ 
+  & .bg-a {
+   background: {
+       image: url('../imgs/ser01.png');
+       repeat: no-repeat;
+       position:right bottom;
+       size: cover;};
+   max-height:300px;
+   
+ }
+  & .bg-b {
+   background: {
+   image: url('../imgs/ser02.png');
+   repeat: no-repeat;
+   position:right bottom;
+   size: cover;
+   }
+   max-height:300px;
+   
+ }
+ 
+  & .br-20 {
+   border-radius: 20px;
+  }
+ 
+ }
+ 
 //5)모래 정기배송 
-#fifth  .col-5{
+#fifth {
+  & .col-5{
   margin: auto 0;
-} 
-#fifth #morea2 {
+ } 
+  & #morea2 {
   max-width: 50vw;
   padding:0;
+ }
 }
 
 //6)miwstore
 .miwstore{
-  background-image: url("../imgs/storeBg.jpeg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+  background: {
+    image: url("../imgs/storeBg.jpeg");
+    repeat: no-repeat;
+    position: top center;
+    size: contain;}
   width: 100%;
   height: 500px;
   padding: 59px 0 0 58px;
@@ -174,43 +188,40 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 
 
 //7)Other service
-#seventh .mw-400 {
+#seventh{
+& .mw-400 {
   // min-width: 250px;
   min-height: 280px;
   width: 250px;
-}
-
-
-#seventh .mh-20 {
+ }
+& .mh-20 {
   max-height: 40vw;
-}
-
-#seventh .my-icon {
+ }
+& .my-icon {
   position: relative;
   top: 20px;
-}
-
-#seventh .my-card {
+ }
+& .my-card {
   border-radius: 10px;
   border: 1px #f5989d solid;
-}
-
-#seventh .dic{
+ }
+& .dic{
   height: 60px;
+ }
 }
-
 
 //ninth: 뉴스 섹션
-#ninth button.d-sm-none {
+#ninth{
+ & button.d-sm-none {
  right: 20px;
   bottom: 50px;
 }
 
-#ninth button.d-none {
+ & button.d-none {
   right: 20px;
   bottom: 20px;
+ }
 }
-
 
 /* swiper slide */
 
@@ -220,6 +231,7 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
 }
 
 .swiper-slide {
+
   text-align: center;
   font-size: 18px;
 
@@ -238,9 +250,9 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
   align-items: center;
 
   overflow: hidden;
-}
 
-.swiper-slide img {
+
+& img {
   display: block;
   width: 200px;
   height: 200px;
@@ -248,17 +260,16 @@ $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, bord
   transition: all 0.4s
 }
 
-.swiper-slide > span {
+& > span {
   display: none;
   transform: translate(-30px);
   background-color: rgba(0,0,0,0.6);
 }
-
-.swiper-slide img:hover + span  {
+& img:hover + span  {
   display: block;
   transform: translateY(0px);
+ }
 }
-
 
 
 // .miwnews .h-100{
